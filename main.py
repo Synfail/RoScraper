@@ -40,7 +40,7 @@ def main():
     ██╔══██╗██║   ██║╚════██║██║     ██╔══██╗██╔══██║██╔═══╝ ██╔══╝  ██╔══██╗
     ██║  ██║╚██████╔╝███████║╚██████╗██║  ██║██║  ██║██║     ███████╗██║  ██║
     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
-    v1.02
+    v1.03
     """
     print(Fore.RED + logo + Style.RESET_ALL)
 
@@ -51,7 +51,7 @@ def main():
     else:
         user_id = input("Enter the user ID: ")
 
-    num_users = int(input("Enter the number of users to scrape (Max 305): "))
+    num_users = int(input("Enter the number of users to scrape: "))
     print(Fore.GREEN + f"\nScraping {num_users} Usernames..." + Style.RESET_ALL)
 
     asyncio.run(scrape_usernames(user_id, num_users))
